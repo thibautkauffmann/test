@@ -1,0 +1,258 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Générateur de numéro sécurité sociale</title>
+<script src="vendor/jquery.js"></script>
+<script src="vendor/inputmask.min.js"></script>
+<script src="vendor/jquery-ui.js"></script>
+<script src="vendor/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+
+<script src="vendor/eternicode-bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ar.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.az.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.bs.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.cy.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.en-GB.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.et.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.eu.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.fa.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.fo.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.fr-CH.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.gl.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.hy.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.it-CH.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ka.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.kh.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.kk.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.mk.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.nl-BE.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.no.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sq.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sr.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sr-latin.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.vi.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" charset="UTF-8"></script>
+
+<link href="vendor/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="vendor/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="css/components/datepicker.css" rel="stylesheet" />
+<link href="css/components/typeahead.css" rel="stylesheet" />
+<link href="css/jquery-ui.min.css" rel="stylesheet" />
+<link href="vendor/eternicode-bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+
+<script>
+	$('#sandbox-container .input-group.date').datepicker({
+	});
+
+    function setPartiesNumeroSecuriteSociale () {
+
+        var date = $('#date');
+
+        var qualite = $("#numeroSesuriteSociale_Qualite");
+        var annee = $("#numeroSesuriteSociale_Annee");
+        var mois = $("#numeroSesuriteSociale_Mois");
+        var dept = $("#numeroSesuriteSociale_Dept");
+        var ordre = $("#numeroSesuriteSociale_Ordre");
+
+        var numero = $("#numeroSesuriteSociale");
+        var cle = $("#cleSesuriteSociale");
+
+        qualite.val(numero.val().substring(0, 1));
+        annee.val(numero.val().substring(1, 3));
+        mois.val(numero.val().substring(3, 5));
+        dept.val(numero.val().substring(5, 7));
+        ordre.val(numero.val().substring(7, numero.val().length));
+
+        calculerCle();
+
+        var currentYear = new Date().getFullYear() - 2000;
+        date
+                .val("01/"
+                        + numero.val().substring(3, 5)
+                        + (parseInt(numero.val().substring(1, 3), 10) <= currentYear ? "/20"
+                                : "19") + numero.val().substring(1, 3));
+    }
+
+    function setNumeroSecuriteSociale () {
+
+        var date = $('#date');
+
+        var qualite = $("#numeroSesuriteSociale_Qualite");
+        var annee = $("#numeroSesuriteSociale_Annee");
+        var mois = $("#numeroSesuriteSociale_Mois");
+        var dept = $("#numeroSesuriteSociale_Dept");
+        var ordre = $("#numeroSesuriteSociale_Ordre");
+
+        var numero = $("#numeroSesuriteSociale");
+        var cle = $("#cleSesuriteSociale");
+
+        if (qualite.val() !== null && qualite.val().length === 1) {
+            numero.val(qualite.val() + numero.val().substring(1, 13));
+        }
+
+        if (annee.val() !== null && annee.val().length === 2) {
+            numero.val(numero.val().substring(0, 1) + annee.val()
+                    + numero.val().substring(2, 13));
+        }
+
+        if (mois.val() !== null && mois.val().length === 2) {
+            numero.val(numero.val().substring(0, 3) + mois.val()
+                    + numero.val().substring(4, 13));
+        }
+
+        if (dept.val() !== null && dept.val().length === 2) {
+            numero.val(numero.val().substring(0, 5) + dept.val()
+                    + numero.val().substring(6, 13));
+        }
+
+        if (ordre.val() !== null && ordre.val().length > 0) {
+            numero.val(numero.val().substring(0, 7) + ordre.val());
+        } else {
+            numero.val(numero.val().substring(0, 7));
+        }
+
+        calculerCle();
+
+        var currentYear = new Date().getFullYear() - 2000;
+        date.val("01/" + mois.val()
+                + (parseInt(annee.val(), 10) <= currentYear ? "/20" : "19")
+                + annee.val());
+    }
+
+    function calculerCle () {
+
+        var numero = $("#numeroSesuriteSociale");
+        var cle = $("#cleSesuriteSociale");
+
+        if (numero.val() !== null) {
+            var numeroSS = parseInt(numero.val(), 10);
+            if (!isNaN(numeroSS)) {
+                cle.val(97 - numeroSS % 97);
+            }
+        }
+    }
+
+    function setPartiesNumeroSecuriteSocialeDate () {
+
+        var date = $('#date').inputmask('unmaskedvalue');
+        var test = document.getElementById("date").value;
+
+        if (date.length === 10 && date !== "__/__/____") {
+            var qualite = $("#numeroSesuriteSociale_Qualite");
+            var annee = $("#numeroSesuriteSociale_Annee");
+            var mois = $("#numeroSesuriteSociale_Mois");
+            var dept = $("#numeroSesuriteSociale_Dept");
+            var ordre = $("#numeroSesuriteSociale_Ordre");
+
+            var numero = $("#numeroSesuriteSociale");
+            var cle = $("#cleSesuriteSociale");
+
+            var anneeVal = date.substring(8, 10);
+
+            if (anneeVal.charAt(0) !== '_' && anneeVal.charAt(1) !== '_') {
+                annee.val(anneeVal);
+            }
+
+            var moisVal = date.substring(3, 5);
+
+            if (moisVal.charAt(0) !== '_' && moisVal.charAt(1) !== '_') {
+                mois.val(moisVal);
+            }
+        }
+    }
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Numuéro de sécurité sociale</h1>
+		</div>
+		<div class="page">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4">Date:</div>
+					<div class="col-md-8">
+						<div class="input-group date">
+	                        <input type="text" class="form-control" id="date" onblur="setPartiesNumeroSecuriteSocialeDate()" maxlength="10" size="10"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+	                    </div>
+						<br /> <br />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4">Numéro sécurité sociale</div>
+					<div class="col-md-8">
+						<input type="text" id="numeroSesuriteSociale_Qualite"
+							maxlength="1" size="1" onblur="setNumeroSecuriteSociale()" />&nbsp;/&nbsp;
+						<input type="text" id="numeroSesuriteSociale_Annee" maxlength="2"
+							size="2" onblur="setNumeroSecuriteSociale()" />&nbsp;/&nbsp; <input
+							type="text" id="numeroSesuriteSociale_Mois" maxlength="2"
+							size="2" onblur="setNumeroSecuriteSociale()" />&nbsp;/&nbsp; <input
+							type="text" id="numeroSesuriteSociale_Dept" maxlength="2"
+							size="2" onblur="setNumeroSecuriteSociale()" />&nbsp;/&nbsp; <input
+							type="text" id="numeroSesuriteSociale_Ordre" maxlength="6"
+							size="6" onblur="setNumeroSecuriteSociale()" /> <br /> <br />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4">Numéro sécurité sociale</div>
+					<div class="col-md-8">
+						<input type="text" id="numeroSesuriteSociale" maxlength="13"
+							size="13" onblur="setPartiesNumeroSecuriteSociale()" /> <br />
+						<br />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4">Clé sécurité sociale</div>
+					<div class="col-md-8">
+						<input type="text" id="cleSesuriteSociale" maxlength="2" size="2"
+							readonly="readonly" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

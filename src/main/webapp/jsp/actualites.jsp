@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Actualités</title>
+<title>ActualitÃ©s</title>
 <!--<script type="text/javascript" src="vendor/jquery.js"></script>-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="vendor/inputmask.min.js"></script>
@@ -362,7 +362,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Les actualités</a>
+					<a class="navbar-brand" href="#">Les actualitï¿½s</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -385,10 +385,10 @@
 							<a href="expertises.jsp">Expertises</a>
 						</li>
 						<li class="dropdown">
-							<a href="actualites.jsp" class="dropdown-toggle" data-toggle="dropdown">Actualités<strong class="caret"></strong></a>
+							<a href="actualites.jsp" class="dropdown-toggle" data-toggle="dropdown">Actualitï¿½s<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#">Droit privé</a>
+									<a href="#">Droit privï¿½</a>
 								</li>
 								<li>
 									<a href="#">Droit Publique</a>
@@ -428,7 +428,7 @@
 
 			<div class="page-header">
 				<h1>
-					Les actualités juridiques&nbsp;<small>Ceci concerne les news</small>
+					Les actualitï¿½s juridiques&nbsp;<small>Ceci concerne les news</small>
 				</h1>
 			</div>
 			<div class="carousel slide" id="carousel-216214">
@@ -489,7 +489,7 @@
 				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 			</p>
 			<p>
-				<a class="btn" href="#">View details »</a>
+				<a class="btn" href="#">View details ï¿½</a>
 			</p>
 			<p>
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>

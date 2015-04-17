@@ -10,10 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by b002kra on 13/04/2015.
  */
 @Controller
-@RequestMapping("/equipe")
 public final class EquipeController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/equipe", method = RequestMethod.GET)
     public String index() {
         return "equipe";
     }
